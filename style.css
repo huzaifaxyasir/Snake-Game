@@ -1,0 +1,120 @@
+body {
+  background: linear-gradient(135deg, #5f4c00, #ad853a, #ecc68d);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 5rem;
+  background: linear-gradient(90deg, #ffe1b9, #ffce47b2);
+  font-weight: bold;
+  font-variant: small-caps;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.madeby {
+  font-variant: small-caps;
+  font-size: 20px;
+  color: #050401;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+select {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: rgba(78, 44, 0, 0.6);
+  color: #fff5ce;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(197, 114, 5, 0.6);
+  transition: 0.3s ease;
+}
+
+select:hover {
+  background: #ffdc16;
+  color: #000;
+}
+
+.btn {
+  background: rgba(78, 44, 0, 0.6);
+  border: none;
+  color: #ffffff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 70px;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(197, 114, 5, 0.6);
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffdc16;
+  box-shadow: 0 4px 20px rgb(255, 234, 115);
+  transform: scale(1.05);
+}
+
+#hud {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #fff5ce;
+  font-variant: small-caps;
+}
+
+#gameCanvas {
+  background-color: #111;
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #ffbb00;
+  box-shadow: 0 0 15px rgba(255, 72, 0, 0.5);
+}
+
+#landing, #gameContainer, #gameOver {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ffe9b1;
+}
+
+@media screen and (max-width: 768px) {
+  #gameCanvas {
+    width: 100%;
+    height: auto;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  #hud {
+    flex-direction: column;
+  }
+}

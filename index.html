@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Snake Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Landing Page -->
+  <div id="landing">
+    <h1 class="title">🐍 Snake Game </h1>
+    <h3 class="madeby"> by Huzaifa Yasir</h3>
+    <label for="difficultySelect">Select Difficulty:</label>
+    <select id="difficultySelect">
+      <option value="6">Easy</option>
+      <option value="9" selected>Normal</option>
+      <option value="13">Hard</option>
+    </select>
+    <br>
+    <button id="startBtn" class="btn">Start Game</button>
+  </div>
+
+  <!-- Game Container -->
+  <div id="gameContainer" style="display: none;">
+    <h1 class="title">🐍</h1>
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+    <div id="hud">
+      <span id="currentScore">Score: 0</span>
+      <span id="highScore">High Score: 0</span>
+    </div>
+  </div>
+
+  <!-- Game Over Screen -->
+  <div id="gameOver" style="display: none;">
+    <h1 class="title">Game Over!</h1>
+    <p id="finalScore" class="score"></p>
+    <button id="restartBtn" class="btn">Restart</button>
+    <button id="homeBtn" class="btn">Go Home</button>
+  </div>
+
+  <footer>
+    <p>© 2025 Huzaifa Yasir. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
